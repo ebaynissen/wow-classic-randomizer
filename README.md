@@ -1,6 +1,6 @@
 # WoW Classic Character Generator
 
-url: https://www.ebaynissen.github.io/wow-classic-generator/
+url: https://www.ebaynissen.github.io/wow-classic-randomizer/
 
 
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).

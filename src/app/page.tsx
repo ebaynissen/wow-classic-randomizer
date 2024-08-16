@@ -49,24 +49,24 @@ export default function Home() {
 
     function emptyOrImg(arg: String) {
         if (arg === "no") {
-            return "/empty.jpg";
+            return "empty.jpg";
         }
     }
 
     function specImg(spec: String) {
         if (spec === "frost AOE") {
-            return "/frost.png";
+            return "frost.png";
         }
 
         if (spec === "protection" && wowClass === "warrior") {
-            return "/protectionW.png";
+            return "protectionW.png";
         }
 
         if (spec === "holy" && wowClass === "paladin") {
-            return "//holyP.png";
+            return "holyP.png";
         }
 
-        return "/" + spec + ".png";
+        return spec + ".png";
     }
 
     function capitalize(word: string): string {
@@ -403,8 +403,8 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[0] === ""
-                                                ? "/empty.png"
-                                                : "/" + final[0] + ".png"
+                                                ? "empty.png"
+                                                : final[0] + ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
@@ -421,7 +421,7 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[1] === ""
-                                                ? "/empty.png"
+                                                ? "empty.png"
                                                 : final[1] + ".png"
                                         }
                                         alt=""
@@ -441,7 +441,7 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[3] === ""
-                                                ? "/empty.png"
+                                                ? "empty.png"
                                                 : final[3] + ".png"
                                         }
                                         alt=""
@@ -459,7 +459,7 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[2] === ""
-                                                ? "/empty.png"
+                                                ? "empty.png"
                                                 : specImg(final[2])
                                         }
                                         alt=""

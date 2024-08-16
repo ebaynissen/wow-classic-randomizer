@@ -1,4 +1,4 @@
-#WoW Classic Character Generator
+# WoW Classic Character Generator
 
 url: ebaynissen.github.io/wow-classic-generator/
 

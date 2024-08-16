@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-    basePath: "/wow-classic-generator",
+    basePath: "/wow-classic-randomizer",
     output: "export",
     images: {
         unoptimized: true,

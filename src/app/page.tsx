@@ -210,7 +210,7 @@ export default function Home() {
     }
     return (
         <main className="flex flex-col items-center min-h-screen bg-gradient-to-tr from-red-600 to-sky-500	">
-            <div className="flex flex-col lg:flex-row justify-center items-center">
+            <div className="flex flex-col lg:flex-row items-center">
                 <form
                     className="w-full lg:w-1/3 max-w-lg p-8 flex-grow"
                     onSubmit={handleSubmit}
@@ -255,7 +255,7 @@ export default function Home() {
                                 Character Race
                             </Label>
                             <Description className="text-sm/6 text-white/50">
-                                Do you want to randomize your characterss race?
+                                Do you want to randomize your character&apo;s race?
                             </Description>
                             <RadioGroup
                                 value={race}

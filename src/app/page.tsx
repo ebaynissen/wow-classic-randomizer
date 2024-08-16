@@ -400,7 +400,7 @@ export default function Home() {
                 </form>
                 <div className="w-full lg:w-2/5">
                     <div className="space-y-4 rounded-xl bg-white/5 p-6 sm:p-10 flex flex-col items-center">
-                        <div className="flex flex-col items-center space-y-4 max-w-72">
+                        <div className="flex flex-col items-center space-y-4 max-w-72 min">
                             <p className="text-xl">Your Character </p>
                             <p className="text-xs">
                                 {final[0] === ""

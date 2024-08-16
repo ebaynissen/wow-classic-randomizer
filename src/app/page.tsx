@@ -217,7 +217,7 @@ export default function Home() {
                 >
                     <Fieldset className="space-y-4 rounded-xl bg-white/5 p-6 sm:p-10">
                         <Legend className="text-base/7 font-semibold text-white">
-                            WoW Classic Character Generator
+                            WoW Classic Character Randomizer
                         </Legend>
                         <Field>
                             <Label className="text-sm/6 font-medium text-white">

@@ -49,24 +49,24 @@ export default function Home() {
 
     function emptyOrImg(arg: String) {
         if (arg === "no") {
-            return "/wow-classic-generator/empty.jpg";
+            return "/empty.jpg";
         }
     }
 
     function specImg(spec: String) {
         if (spec === "frost AOE") {
-            return "/wow-classic-generator/frost.png";
+            return "/frost.png";
         }
 
         if (spec === "protection" && wowClass === "warrior") {
-            return "/wow-classic-generator/protectionW.png";
+            return "/protectionW.png";
         }
 
         if (spec === "holy" && wowClass === "paladin") {
-            return "/wow-classic-generator/holyP.png";
+            return "//holyP.png";
         }
 
-        return "/wow-classic-generator/" + spec + ".png";
+        return "/" + spec + ".png";
     }
 
     function capitalize(word: string): string {
@@ -403,10 +403,8 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[0] === ""
-                                                ? "/wow-classic-generator/empty.png"
-                                                : "/wow-classic-generator/" +
-                                                  final[0] +
-                                                  ".png"
+                                                ? "/empty.png"
+                                                : "/" + final[0] + ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
@@ -423,10 +421,8 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[1] === ""
-                                                ? "/wow-classic-generator/empty.png"
-                                                : "/wow-classic-generator/" +
-                                                  final[1] +
-                                                  ".png"
+                                                ? "/empty.png"
+                                                : final[1] + ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
@@ -445,10 +441,8 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[3] === ""
-                                                ? "/wow-classic-generator/empty.png"
-                                                : "/wow-classic-generator/" +
-                                                  final[3] +
-                                                  ".png"
+                                                ? "/empty.png"
+                                                : final[3] + ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
@@ -465,7 +459,7 @@ export default function Home() {
                                     <Image
                                         src={
                                             final[2] === ""
-                                                ? "/wow-classic-generator/empty.png"
+                                                ? "/empty.png"
                                                 : specImg(final[2])
                                         }
                                         alt=""
@@ -484,10 +478,8 @@ export default function Home() {
                                 <Image
                                     src={
                                         final[4] === ""
-                                            ? "/wow-classic-generator/empty.png"
-                                            : "/wow-classic-generator/" +
-                                              final[4] +
-                                              ".png"
+                                            ? "empty.png"
+                                            : final[4] + ".png"
                                     }
                                     alt=""
                                     className="w-16 h-16"

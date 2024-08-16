@@ -225,7 +225,7 @@ export default function Home() {
                                     )}
                                 >
                                     <option value="random">
-                                        Doesn&apost Matter
+                                        Doesn&apos;t Matter
                                     </option>
                                     <option value="alliance">Alliance</option>
                                     <option value="horde">Horde</option>
@@ -275,7 +275,7 @@ export default function Home() {
                                 Character Class
                             </Label>
                             <Description className="text-sm/6 text-white/50">
-                                Do you want to randomize your character&aposs
+                                Do you want to randomize your character&apos;s
                                 class?
                             </Description>
                             <RadioGroup

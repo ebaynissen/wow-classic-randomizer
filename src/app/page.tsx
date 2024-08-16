@@ -255,7 +255,7 @@ export default function Home() {
                                 Character Race
                             </Label>
                             <Description className="text-sm/6 text-white/50">
-                                Do you want to randomize your character&apo;s race?
+                                Do you want to randomize your character&apos;s race?
                             </Description>
                             <RadioGroup
                                 value={race}

@@ -88,6 +88,20 @@ export default function Home() {
         let finClass = capitalize(final[3]);
         let finProf = capitalize(final[4]);
 
+        if (
+            finRace === "" &&
+            finSpec === "" &&
+            finClass === "" &&
+            finProf === ""
+        ) {
+            return (
+                (finFac === "Alliance" ? "An" : "A") +
+                " " +
+                finFac +
+                " character"
+            );
+        }
+
         return (
             (finFac === "Alliance" ? "An" : "A") +
             " " +
@@ -99,8 +113,8 @@ export default function Home() {
             " " +
             finClass +
             (finProf === ""
-                ? "."
-                : " with " + finProf + " as their main profession. ")
+                ? ""
+                : " with " + finProf + " as their main profession")
         );
     }
 

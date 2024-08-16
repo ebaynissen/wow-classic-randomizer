@@ -497,7 +497,7 @@ export default function Home() {
                     <p>
                         ©{new Date().getFullYear()} by Ebaynissen
                         <a
-                            href="https://www.github.com/ebaynissen"
+                            href="https://www.github.com/ebaynissen/wow-classic-randomizer"
                             className="underline px-2"
                             target="_blank"
                         >

@@ -2,7 +2,9 @@
 const nextConfig = {
     basePath: "/wow-classic-generator",
     output: "export",
-    reactStrictMode: true,
+    images: {
+        unoptimized: true,
+    },
 };
 
 export default nextConfig;

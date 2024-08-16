@@ -23,7 +23,7 @@ import {
 } from "@headlessui/react";
 import clsx from "clsx";
 import { ChevronDownIcon, CheckCircleIcon } from "@heroicons/react/20/solid";
-import { Span } from "next/dist/trace";
+import Image from "next/image";
 
 export default function Home() {
     const [faction, setFaction] = useState("random");
@@ -49,24 +49,24 @@ export default function Home() {
 
     function emptyOrImg(arg: String) {
         if (arg === "no") {
-            return "empty.jpg";
+            return "/wow-classic-generator/empty.jpg";
         }
     }
 
     function specImg(spec: String) {
         if (spec === "frost AOE") {
-            return "frost.png";
+            return "/wow-classic-generator/frost.png";
         }
 
         if (spec === "protection" && wowClass === "warrior") {
-            return "protectionW.png";
+            return "/wow-classic-generator/protectionW.png";
         }
 
         if (spec === "holy" && wowClass === "paladin") {
-            return "holyP.png";
+            return "/wow-classic-generator/holyP.png";
         }
 
-        return spec + ".png";
+        return "/wow-classic-generator/" + spec + ".png";
     }
 
     function capitalize(word: string): string {
@@ -225,7 +225,7 @@ export default function Home() {
                                     )}
                                 >
                                     <option value="random">
-                                        Doesn't Matter
+                                        Doesn&apost Matter
                                     </option>
                                     <option value="alliance">Alliance</option>
                                     <option value="horde">Horde</option>
@@ -241,7 +241,7 @@ export default function Home() {
                                 Character Race
                             </Label>
                             <Description className="text-sm/6 text-white/50">
-                                Do you want to randomize your character's race?
+                                Do you want to randomize your characterss race?
                             </Description>
                             <RadioGroup
                                 value={race}
@@ -275,7 +275,8 @@ export default function Home() {
                                 Character Class
                             </Label>
                             <Description className="text-sm/6 text-white/50">
-                                Do you want to randomize your character's class?
+                                Do you want to randomize your character&aposs
+                                class?
                             </Description>
                             <RadioGroup
                                 value={wowClass}
@@ -399,14 +400,18 @@ export default function Home() {
                                             ? "Faction"
                                             : capitalize(final[0])}
                                     </p>
-                                    <img
+                                    <Image
                                         src={
                                             final[0] === ""
-                                                ? "empty.png"
-                                                : final[0] + ".png"
+                                                ? "/wow-classic-generator/empty.png"
+                                                : "/wow-classic-generator/" +
+                                                  final[0] +
+                                                  ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
+                                        width={16}
+                                        height={16}
                                     />
                                 </div>
                                 <div className="flex flex-col items-center w-28">
@@ -415,14 +420,18 @@ export default function Home() {
                                             ? "Race"
                                             : capitalize(final[1])}
                                     </p>
-                                    <img
+                                    <Image
                                         src={
                                             final[1] === ""
-                                                ? "empty.png"
-                                                : final[1] + ".png"
+                                                ? "/wow-classic-generator/empty.png"
+                                                : "/wow-classic-generator/" +
+                                                  final[1] +
+                                                  ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
+                                        width={16}
+                                        height={16}
                                     />
                                 </div>
                             </div>
@@ -433,14 +442,18 @@ export default function Home() {
                                             ? "Class"
                                             : capitalize(final[3])}
                                     </p>
-                                    <img
+                                    <Image
                                         src={
                                             final[3] === ""
-                                                ? "empty.png"
-                                                : final[3] + ".png"
+                                                ? "/wow-classic-generator/empty.png"
+                                                : "/wow-classic-generator/" +
+                                                  final[3] +
+                                                  ".png"
                                         }
                                         alt=""
                                         className="w-16 h-16"
+                                        width={16}
+                                        height={16}
                                     />
                                 </div>
                                 <div className="flex flex-col items-center w-28">
@@ -449,14 +462,16 @@ export default function Home() {
                                             ? "Spec"
                                             : capitalize(final[2])}
                                     </p>
-                                    <img
+                                    <Image
                                         src={
                                             final[2] === ""
-                                                ? "empty.png"
+                                                ? "/wow-classic-generator/empty.png"
                                                 : specImg(final[2])
                                         }
                                         alt=""
                                         className="w-16 h-16"
+                                        width={16}
+                                        height={16}
                                     />
                                 </div>
                             </div>
@@ -466,14 +481,18 @@ export default function Home() {
                                         ? "Profession"
                                         : capitalize(final[4])}
                                 </p>
-                                <img
+                                <Image
                                     src={
                                         final[4] === ""
-                                            ? "empty.png"
-                                            : final[4] + ".png"
+                                            ? "/wow-classic-generator/empty.png"
+                                            : "/wow-classic-generator/" +
+                                              final[4] +
+                                              ".png"
                                     }
                                     alt=""
                                     className="w-16 h-16"
+                                    width={16}
+                                    height={16}
                                 />
                             </div>
                         </div>

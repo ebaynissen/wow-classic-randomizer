@@ -1,22 +1,22 @@
 export const allianceCombinations: { [key: string]: string[] } = {
-    priest: ["human", "dwarf"],
+    priest: ["human", "dwarf", "night elf"],
     mage: ["gnome", "human"],
     warlock: ["gnome", "human"],
     druid: ["night elf"],
-    rogue: ["night elf", "gnome", "dwarf"],
+    rogue: ["human", "night elf", "gnome", "dwarf"],
     hunter: ["night elf", "dwarf"],
     paladin: ["human", "dwarf"],
-    warrior: ["human", "gnome", "dwarf"],
+    warrior: ["human", "gnome", "dwarf", "night elf"],
 };
 
 export const hordeCombinations: { [key: string]: string[] } = {
     priest: ["undead", "troll"],
     mage: ["undead", "troll"],
-    warlock: ["undead", "troll"],
+    warlock: ["undead", "orc"],
     druid: ["tauren"],
     rogue: ["undead", "troll", "orc"],
     hunter: ["troll", "orc"],
-    warrior: ["undead", "troll", "orc"],
+    warrior: ["undead", "troll", "orc", "tauren"],
     shaman: ["troll", "orc", "tauren"],
 };
 
@@ -80,4 +80,3 @@ export const mainProfessions = [
     "enchanting",
     "blacksmithing",
 ];
-
